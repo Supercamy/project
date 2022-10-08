@@ -7,6 +7,7 @@ import Projects from './pages/Projects'
 import Charts from './pages/Charts'
 import Sign from './pages/Sign'
 import Signup from './pages/Signup'
+import ForgotPassword from './pages/ForgotPassword'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
           <Route path='/sign' element={<Sign />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/password' element={<ForgotPassword />} />
         </Routes>
       </Router>
       <ToastContainer position='top-center' />

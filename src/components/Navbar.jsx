@@ -194,6 +194,25 @@ export default function Navbar() {
                               </p>
                             </div>
                           </a>
+                          <a
+                            onClick={() => navigate('/password')}
+                            key='Security'
+                            // href={item.href}
+                            className='-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50'
+                          >
+                            <ShieldCheckIcon
+                              className='h-6 w-6 flex-shrink-0 text-indigo-600'
+                              aria-hidden='true'
+                            />
+                            <div className='ml-4'>
+                              <p className='text-base font-medium text-gray-900'>
+                                Security
+                              </p>
+                              <p className='mt-1 text-sm text-gray-500'>
+                                Your customers' data will be safe and secure.
+                              </p>
+                            </div>
+                          </a>
                         </div>
                         <div className='space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8'>
                           {callsToAction.map((item) => (
