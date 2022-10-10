@@ -16,6 +16,7 @@ import {
   Squares2X2Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import MyImage from '../data/logoo.svg'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const solutions = [
@@ -96,7 +97,7 @@ export default function Navbar() {
 
   const onLogout = () => {
     auth.signOut()
-    navigate('/')
+    navigate('/sign')
   }
 
   return (
@@ -108,12 +109,13 @@ export default function Navbar() {
               <span className='sr-only'>Project System</span>
               <img
                 className='h-8 w-auto sm:h-10'
-                src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+                src={MyImage}
+                // src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
                 alt=''
               />
             </a>
             <h3 className=' justify-start lg:w-0 lg:flex-1 items-center pt-2 ml-3 text-base font-medium text-indigo-600'>
-              PF Projects
+              Asset Tracking
             </h3>
           </div>
           <div className='-my-2 -mr-2 md:hidden'>

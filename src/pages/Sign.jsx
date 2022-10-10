@@ -3,6 +3,7 @@ import { toast } from 'react-toastify'
 import { Link, useNavigate } from 'react-router-dom'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import { LockClosedIcon } from '@heroicons/react/20/solid'
+import MyImage from '../data/logoo.svg'
 
 function Sign() {
   const [formData, setFormData] = useState({
@@ -47,7 +48,8 @@ function Sign() {
         <div>
           <img
             className='mx-auto h-12 w-auto'
-            src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+            src={MyImage}
+            // src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
             alt='Your Company'
           />
           <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>

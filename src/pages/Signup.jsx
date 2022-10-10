@@ -9,6 +9,7 @@ import { setDoc, doc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase.config'
 import { toast } from 'react-toastify'
 import { LockClosedIcon } from '@heroicons/react/20/solid'
+import MyImage from '../data/logoo.svg'
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -63,7 +64,8 @@ function Signup() {
         <div>
           <img
             className='mx-auto h-12 w-auto'
-            src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+            src={MyImage}
+            // src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
             alt='Your Company'
           />
           <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
